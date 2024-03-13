@@ -1,0 +1,237 @@
+@import url('https://fonts.cdnfonts.com/css/lato');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.logo{
+    width: 200px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.divbiel{
+    margin-left: 200px;
+    margin-top: 400px;
+}
+
+.colorido{
+    background-color: #d9d9d9; /* Cor de fundo para a seção home */
+    padding: 10px;
+}
+
+.google{
+width: 150px;
+height: auto;
+flex-shrink: 0;
+margin-top: 30px; 
+margin-left: -800px;
+}
+
+.apple{
+    width: 133px;
+    height: auto;
+    flex-shrink: 0;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    
+}
+
+:root{
+    --white:#f8f6f6;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 20px;
+    box-shadow: 0 0.1rem 0.5rem #BB2649;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.home{
+    background-color: #BB2649;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.home-text{
+    max-width: 37rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.texto
+{
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -5.76px;
+    margin-left: -80px;
+   
+
+}
+
+.texto1{
+    margin-left: -150px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -5.76px;
+}
+
+hr{
+   height: 1px;
+   background-color: #BB2649;
+   border: none;
+}
+
+.imagembiel{
+    width: 690px;
+    height: auto;
+    flex-shrink: 0;
+    margin-left: 30px;
+    margin-top: 120px;
+    margin-bottom: 0px;
+
+}
+
+.home-img img{
+    width: 450px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 90px;
+    margin-right: -80px;
+    
+   
+}
+@media (max-width:785px) {
+    .navigation{
+        padding: 9px 10px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    /*main*/
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img{
+        width: 125%;
+    }
+
+}
+
+.titu{
+    width: 561px;
+    height: 137px;
+    flex-shrink: 0;
+    margin-left: 780px;
+    margin-top: -280px;
+}
+
+.titu h1{
+    color: #000;
+    font-family: Lato;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -3.3px;
+    margin-left: -30px;
+}
+
+
+.subti{
+    width: 576px;
+    height: 269px;
+    flex-shrink: 0;
+    margin-left: 740px;
+}
+
+.subti h2{
+    color: #6F6F6F;
+    font-family: Lato;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -1.98px;
+    text-align: justify;
+    margin-left: 15px;
+}
+
+#rodape {
+    background-color: #d9d9d9;
+    padding: 20px;
+    text-align: center;
+}
+
+#osastec img {
+    margin-top: -5px;
+    max-width: 30px;
+    height: auto;
+}
+
+#copy h1 {
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+}
